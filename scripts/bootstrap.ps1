@@ -36,6 +36,11 @@ foreach ($item in $archives) {
 }
 $env:MOON_HOME = $target
 $env:PATH = "$target\bin;$env:PATH"
+# Keep core's bundle from discovering the enclosing application's moon.work.
+# This generated isolation file is not a patch to any pinned upstream source.
+$coreWorkspace = "$target\lib\core\moon.work"
+if (Test-Path -LiteralPath $coreWorkspace) { throw 'Unexpected workspace in fresh core archive; refusing to overwrite it.' }
+[System.IO.File]::WriteAllText($coreWorkspace, ('members = ["."]' + "`n"), (New-Object System.Text.UTF8Encoding($false)))
 Push-Location "$target\lib\core"
 try {
   & "$target\bin\moon.exe" bundle --target wasm --warn-list '-a'

@@ -1,5 +1,9 @@
 # Changelog
 
+## Repository bootstrap fix — 2026-11-26
+
+- The first GitHub fresh-workspace run exposed enclosing moon.work discovery during the initial core bundle. Generate a minimal core workspace before bundling; original pinned source and archive hashes remain unchanged. Keep the failed run and verify the fix in a new clean runner.
+
 ## 1.2.0 — 2026-11-26
 
 - Schema v2 separates risk, configuration errors, unsupported coverage and contextual information. Unsupported remains blocking at every threshold.
