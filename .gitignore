@@ -1,0 +1,10 @@
+work/
+evidence/
+_build/
+releases/
+release-manifest.json
+*.tmp
+__pycache__/
+*.pyc
+.env
+.env.*

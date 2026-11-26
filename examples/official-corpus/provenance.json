@@ -1,0 +1,57 @@
+{
+  "repository": "https://github.com/moonbitlang/moon",
+  "commit": "738607b3e4005a0343f09b744dbde641b38de64c",
+  "license": "Apache-2.0",
+  "execution": "STATIC_ONLY; bodies never compiled or executed",
+  "files": [
+    {
+      "file": "LICENSE",
+      "upstream_path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/LICENSE",
+      "bytes": 11368,
+      "sha256": "90454fb43c4a5b4dd08aa9e59da1aa9b388db3dac4fd8db1c12aa2d67b922ef9"
+    },
+    {
+      "file": "embedded_policy.mbtx",
+      "upstream_path": "crates/moon/tests/test_cases/moon_test_single_file.in/embedded_policy.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moon/tests/test_cases/moon_test_single_file.in/embedded_policy.mbtx",
+      "bytes": 179,
+      "sha256": "be2adbc764967991422505406c93c76f555484e7acfc1372ad0100fc64f8075c"
+    },
+    {
+      "file": "front_matter_permission.mbtx",
+      "upstream_path": "crates/moon/tests/test_cases/moon_test_single_file.in/front_matter_permission.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moon/tests/test_cases/moon_test_single_file.in/front_matter_permission.mbtx",
+      "bytes": 182,
+      "sha256": "b08d1becfd5e3c6cc8ff89f5517ddbf32ff3efc5bf1e62a58e7f19506cb4679d"
+    },
+    {
+      "file": "malformed_embedded_policy.mbtx",
+      "upstream_path": "crates/moon/tests/test_cases/moon_test_single_file.in/malformed_embedded_policy.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moon/tests/test_cases/moon_test_single_file.in/malformed_embedded_policy.mbtx",
+      "bytes": 138,
+      "sha256": "6b2b7004c9971a3b6ccc1bf401c169f2d95b9b47e05f9d13e27cf2a0d101c3de"
+    },
+    {
+      "file": "import_block_ok.mbtx",
+      "upstream_path": "crates/moon/tests/test_cases/moon_test_single_file.in/import_block_ok.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moon/tests/test_cases/moon_test_single_file.in/import_block_ok.mbtx",
+      "bytes": 186,
+      "sha256": "daf58b286db36482b916f456e4214f48f8d87d6f3009f48391d8ed459280b9bd"
+    },
+    {
+      "file": "build config.mbtx",
+      "upstream_path": "crates/moon/tests/test_cases/prebuild_config_script/mbtx/build config.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moon/tests/test_cases/prebuild_config_script/mbtx/build%20config.mbtx",
+      "bytes": 1750,
+      "sha256": "eeb3b9adeb1878496d47f1c5148b54133db9552b1fc84465dc2ff67556232819"
+    },
+    {
+      "file": "leaf.mbtx",
+      "upstream_path": "crates/moonrun/tests/test_cases/test_virtual_moon.in/leaf.mbtx",
+      "url": "https://raw.githubusercontent.com/moonbitlang/moon/738607b3e4005a0343f09b744dbde641b38de64c/crates/moonrun/tests/test_cases/test_virtual_moon.in/leaf.mbtx",
+      "bytes": 395,
+      "sha256": "f0cc2ae62a6c9c0133d5f4a576b079bcf7bd26f1aa28c21d2448a27d16abc396"
+    }
+  ]
+}

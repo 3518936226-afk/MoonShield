@@ -1,0 +1,23 @@
+name: MoonShield Windows verification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prepare pinned isolated toolchain
+        shell: pwsh
+        run: ./scripts/bootstrap.ps1 -Download
+      - name: Full MoonBit, official parser, real Wasm and CLI verification
+        shell: pwsh
+        run: ./scripts/test.ps1 -Integration
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: moonshield-windows-evidence
+          path: evidence/
+          retention-days: 14

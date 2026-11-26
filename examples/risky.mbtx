@@ -1,0 +1,9 @@
+---
+permission(
+  fs: { "read": ["*"], "write": ["."] },
+  env: { "from_host": ["*", "PATH"], "set": { "DEMO": "SYNTHETIC_ONLY" } },
+  process: { "allow": [{ "program": "cmd.exe", "args_prefix": ["/c"] }] },
+  net: { "connect": ["*:*"] },
+)
+---
+fn main { abort("CANDIDATE_BODY_MUST_NOT_EXECUTE") }

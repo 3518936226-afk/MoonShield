@@ -1,0 +1,68 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "moonbitlang/lexer/basic"
+
+import {
+  "moonbitlang/core/debug",
+  "moonbitlang/core/json",
+  "moonbitlang/core/ref",
+}
+
+// Values
+pub let builtin_package : String
+
+pub let current_package : @ref.Ref[String]
+
+pub let show_loc : @ref.Ref[LocStyle]
+
+// Errors
+
+// Types and methods
+#derive(Compare, Eq, Hash, @debug.Debug)
+pub(all) struct BasePos {
+  base_pkg : String
+  base_fname : String
+  base_lnum : Int32
+}
+pub fn BasePos::from_position(pkg~ : String, Position) -> Self
+pub fn BasePos::none() -> Self
+
+pub(all) enum LocStyle {
+  Hidden
+  Json
+  String
+}
+
+#derive(Compare, Eq, Hash, @debug.Debug)
+pub(all) struct Location {
+  start : Position
+  end : Position
+}
+pub fn Location::merge(Self, Self) -> Self
+pub fn Location::trim_first_char(Self) -> Self
+pub fn Location::trim_last_char(Self) -> Self
+pub impl Show for Location
+pub impl @json.ToJson for Location
+
+#derive(Hash, @debug.Debug, @json.ToJson)
+pub(all) struct Position {
+  fname : String
+  lnum : Int32
+  bol : Int32
+  cnum : Int32
+}
+pub fn Position::column(Self) -> Int32
+pub impl Compare for Position
+pub impl Eq for Position
+pub impl Show for Position
+
+#derive(@debug.Debug)
+pub(all) struct Report {
+  loc : Location
+  msg : String
+}
+pub impl Show for Report
+pub impl @json.ToJson for Report
+
+// Type aliases
+
+// Traits

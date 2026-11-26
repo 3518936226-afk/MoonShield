@@ -1,0 +1,23 @@
+---
+import {
+  "moonbitlang/core/async/fs",
+  "moonbitlang/core/string",
+}
+permission(fs: { "read": ["orders.csv"], "write": [{ "glob": "summary.txt" }] })
+---
+// MoonShield-owned synthetic workload. No customer or private data.
+async fn main {
+  let csv = @fs.read_text("orders.csv")
+  let mut total = 0
+  let mut count = 0
+  for i, line in csv.trim().split("\n").to_array() {
+    if i == 0 { continue }
+    let fields = line.split(",").to_array()
+    if fields.length() != 3 { abort("Expected id,quantity,price_cents") }
+    total += @string.parse_int(fields[1]) * @string.parse_int(fields[2])
+    count += 1
+  }
+  let summary = "orders=\{count};total_cents=\{total}"
+  @fs.write_text("summary.txt", summary)
+  println(summary)
+}

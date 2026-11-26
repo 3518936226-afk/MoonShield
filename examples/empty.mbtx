@@ -1,0 +1,5 @@
+---
+permission()
+---
+// Auditing this file must never execute this body.
+fn main { abort("CANDIDATE_BODY_MUST_NOT_EXECUTE") }

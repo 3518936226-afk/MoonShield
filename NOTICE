@@ -1,0 +1,9 @@
+MoonShield 1.2.0
+Copyright 2026 MoonShield contributors.
+
+This distribution includes MoonBit parser/core code and a runtime-semantics port
+from software developed at International Digital Economy Academy.
+See THIRD_PARTY_NOTICES.md, vendor/parser/LICENSE and licenses for complete notices.
+
+No endorsement by MoonBit, International Digital Economy Academy, GCC,
+MinGW-w64, Microsoft, or competition organizers is implied.

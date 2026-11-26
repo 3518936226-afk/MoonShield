@@ -1,0 +1,44 @@
+{
+  "version": "1.2.0",
+  "scope": "Initial local Windows x64 validation, not a remote CI claim",
+  "tests": {
+    "owned_moonbit": 36,
+    "official_parser_and_lexer": 99,
+    "runtime_conformance": 39,
+    "cli_integration": 145,
+    "qualification": 39,
+    "release_smoke": 10
+  },
+  "all_passed": true,
+  "raw_private_logs_published": false,
+  "runtime_backend": "Real Moonrun Wasm",
+  "minimum_runtime_repetitions": 3,
+  "untested": [
+    "Linux",
+    "macOS",
+    "other physical computer",
+    "other toolchain versions"
+  ],
+  "files": {
+    "dist/moonshield.wasm": "99ca5e36ecedfa727a07f3b1374d742b5e19168dde663326bd12dcb0b2266d1f",
+    "MoonShield.exe": "e14432bb67408deff52e1ad804e8b5f314fbbdd7b182135c777e6196d1c6eb64",
+    "toolchain.lock.json": "d908c135bb84a8091c87ee72e7bd24ab332740552ffb84c0d822ec1e9f6a4ec9",
+    "upstream.lock.json": "fda61ead6bafecf89ec1dd3b8cc7e16607248d12c3f57ccc4fd18031aba83882"
+  },
+  "publication_checkout_validation": {
+    "owned_moonbit_passed": 36,
+    "official_parser_and_lexer_passed": 99,
+    "runtime_passed": 39,
+    "cli_passed": 145,
+    "qualification_passed": 39,
+    "toolchain": "Reused exact pinned independent toolchain; not a claim of a new toolchain install",
+    "raw_private_logs_published": false
+  },
+  "publication_record_sha256": {
+    "owned-unit-stdout": "9b915e1e3b7ef475a0453930e798216ab1f09f34797612150dfd3bdd3c9bf6ed",
+    "official-parser-stdout": "bfac6f2ae5a03fa5e361fb539f891326c3776adc72a9354b765231acda19256f",
+    "runtime-results": "09076d7a8ab19e3d3ca726d067689a555b99a58babc9f4389d2dac9014253421",
+    "cli-results": "7f5a94d4be05dbce81434624e28d39ccacfd61db9c607f0181c8aa2b818d1de3",
+    "qualification-results": "0268ad5245769c7636a6c7acecf9dbd6da32bba6e0fbc181ade015d25533aede"
+  }
+}

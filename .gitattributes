@@ -1,0 +1,8 @@
+* -text
+*.mbt linguist-language=MoonBit
+*.mbtx linguist-language=MoonBit
+vendor/** linguist-vendored
+docs/runtime-reference/** linguist-vendored
+examples/official-corpus/** linguist-vendored
+*.exe binary
+*.wasm binary

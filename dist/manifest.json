@@ -1,0 +1,6 @@
+{
+  "version": "1.2.0",
+  "wasm_sha256": "99ca5e36ecedfa727a07f3b1374d742b5e19168dde663326bd12dcb0b2266d1f",
+  "toolchain": "Pinned external toolchain; see toolchain.lock.json",
+  "source": "MoonBit Wasm; not Native isolation evidence"
+}

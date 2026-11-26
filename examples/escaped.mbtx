@@ -1,0 +1,5 @@
+---
+// Runtime configuration uses JSON-style four-hex escapes.
+permission(fs: { "\u0072ead": ["\u002a"] })
+---
+fn main { abort("CANDIDATE_BODY_MUST_NOT_EXECUTE") }

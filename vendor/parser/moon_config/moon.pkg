@@ -1,0 +1,15 @@
+import {
+  "moonbitlang/lexer/basic",
+  "moonbitlang/lexer/tokens",
+  "moonbitlang/lexer",
+  "moonbitlang/core/hashset",
+  "moonbitlang/core/immut/vector",
+}
+
+import {
+  "moonbitlang/core/debug",
+} for "test"
+
+import {
+  "moonbitlang/core/debug",
+} for "wbtest"

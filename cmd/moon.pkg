@@ -1,0 +1,10 @@
+import {
+  "moonshield/src" @shield,
+  "moonbitlang/core/env",
+  "moonbitlang/core/path",
+  "moonbitlang/core/string",
+  "moonbitlang/core/encoding/utf8" @utf8,
+  "moonbitlang/core/async/fs",
+  "moonbitlang/core/async/process",
+}
+options("is-main": true, "allow-experimental-packages": ["moonbitlang/core/async/fs", "moonbitlang/core/async/process"])
